@@ -32,15 +32,13 @@
     <title>Boutique Ado {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <head class="container-fluid fixed-top">
-
-    </head>
+    <head class="container-fluid fixed-top"></head>
 
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
 
-    {% blockpage_header %}
+    {% block page_header %}
     {% endblock %}
 
     {% block content %}
