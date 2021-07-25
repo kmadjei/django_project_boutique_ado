@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
+import dj_database_url
 if os.path.exists("env.py"):
     import env 
 
@@ -120,13 +121,17 @@ WSGI_APPLICATION = 'boutique_ado.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
+if 'DA '
+DATABASES = {
+    'default': dj_database_url.parse('postgres://ibtxijwhahotro:fa62fae11395d16a12ddaac465dc3cbc81f8a2467092f3f9b0e4b3357c4c979f@ec2-54-147-93-73.compute-1.amazonaws.com:5432/d38qtvh5bo51bg')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
