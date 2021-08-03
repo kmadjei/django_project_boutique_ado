@@ -60,12 +60,16 @@ The **user stories** below showcases the variety of functionalities built into t
 ### Mock Ups
 
 **Home Page**
-<img src="https://github.com/kmadjei/django_project_boutique_ado/blob/main/boutique-ado-mockups/home-desktop.PNG?raw=true" alt="Home-desktop Mock Ups" width="300" height="300">
-<img src="https://github.com/kmadjei/django_project_boutique_ado/blob/main/boutique-ado-mockups/home-mobile.PNG?raw=true" alt="Home-mobile Mock Ups" width="300" height="300">
+
+<img src="https://github.com/kmadjei/django_project_boutique_ado/blob/main/boutique-ado-mockups/home-desktop.PNG?raw=true" alt="Home-desktop Mock Ups" max-width="500" height="300">
+
+<img src="https://github.com/kmadjei/django_project_boutique_ado/blob/main/boutique-ado-mockups/home-mobile.PNG?raw=true" alt="Home-mobile Mock Ups" max-width="500" height="300">
 
 **Products Page**
-<img src="https://github.com/kmadjei/django_project_boutique_ado/blob/main/boutique-ado-mockups/products-desktop.PNG?raw=true" alt="products-desktop Mock Ups" width="300" height="300">
-<img src="https://github.com/kmadjei/django_project_boutique_ado/blob/main/boutique-ado-mockups/products-mobile.PNG?raw=true" alt="products-mobile Mock Ups" width="300" height="300">
+
+<img src="https://github.com/kmadjei/django_project_boutique_ado/blob/main/boutique-ado-mockups/products-desktop.PNG?raw=true" alt="products-desktop Mock Ups" max-width="300" height="300">
+
+<img src="https://github.com/kmadjei/django_project_boutique_ado/blob/main/boutique-ado-mockups/products-mobile.PNG?raw=true" alt="products-mobile Mock Ups" max-width="300" height="300">
 
 
 ## Technologies Used
