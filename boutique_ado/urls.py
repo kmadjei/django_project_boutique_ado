@@ -19,11 +19,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls')),
-    path('', include('home.urls')),
-    path('products/', include('products.urls')),
-    path('bag/', include('bag.urls')),
-    path('checkout/', include('checkout.urls')),
-    path('profile/', include('profiles.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('admin/', admin.site.urls), # admin url log in route
+    path('accounts/', include('allauth.urls')), # allauth authentication route
+    path('', include('home.urls')), # home page url routes
+    path('products/', include('products.urls')), # products page url routes
+    path('bag/', include('bag.urls')), # bag page url route
+    path('checkout/', include('checkout.urls')), # checkout page url route
+    path('profile/', include('profiles.urls')),# home page url route
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # renders static files

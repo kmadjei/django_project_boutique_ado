@@ -127,7 +127,7 @@ The **user stories** below showcases the variety of functionalities built into t
 
 ## Deployment
 
-The Food Lovers - Backend Development Project - has been deployed to 👉[Heroku.](https://python-and-datacentric-project.herokuapp.com/)👈
+The E-commerce FullStack Django project has been deployed to 👉[Heroku.](https://kmadjei-boutique-ado.herokuapp.com/)👈
 
 ### Deploying To Heroku
 
@@ -139,7 +139,7 @@ The Food Lovers - Backend Development Project - has been deployed to 👉[Heroku
 6. Copy the url of the Github repository created for the app.
 7. On the terminal, add the url you copied, as a remote with the command 
     ```git remote add origin <paste your github URL here> ```
-
+    1. Make sure to also install **gunicorn** with ```pip install gunicorn``` in the terminal, inorder to deploy to heroku
 8. Next, commit all your changes to git with these commands
     ```bash
     git add . 
@@ -154,7 +154,7 @@ The Food Lovers - Backend Development Project - has been deployed to 👉[Heroku
     pip3 freeze --local > requirements.txt
     touch Procfile
     ```
-    2. Make sure the Procfile created has a capital "P" in the title. Open the Procfile in a text editor and add this line of text on the first line ```web: python app.py```. Note: make sure there is not extra line after the first one. Not even an empty line.
+    2. Make sure the Procfile created has a capital "P" in the title. Open the Procfile in a text editor and add this line of text on the first line ```web: gunicorn boutique_ado.wsgi:application```. Note: make sure there is not extra line after the first one. Not even an empty line.
     3. Repeat step 8 and 10 of the steps above.
 13. After creating an account on Heroku, an app name where the project is hosted will need to be created from the dash board.
 <img src="https://github.com/kmadjei/MilestoneProject-Python-and-DataCentricDevelopment/blob/master/static/images/herokudeploy/heroku-new.PNG?raw=true" alt="Deploy image">
@@ -165,7 +165,17 @@ The Food Lovers - Backend Development Project - has been deployed to 👉[Heroku
 15. Click on the settings tab and then click the **Reveal Config Vars** to add the config variables of the python application.
 <img src="https://github.com/kmadjei/MilestoneProject-Python-and-DataCentricDevelopment/blob/master/static/images/herokudeploy/settings.PNG?raw=true" alt="Deploy image">
 
-16. The config variables added will be similar to the ```env.py``` file utilized in deploying the application on the local PC, similar to the variables in enclosed in brackets in this [env sample](https://github.com/Code-Institute-Solutions/TaskManagerAuth/blob/main/08-SearchingWithinTheDatabase/01-text_index_searching/env_sample.py)
+16. The following are the config vars to be added. Note: Some were given upon integrating functionalities such as stripe intents and webhooks.
+    1. AWS_ACCESS_KEY_ID
+    2. AWS_SECRET_ACCESS_KEY
+    3. DATABASE_URL
+    4. EMAIL_HOST_PASS
+    5. EMAIL_HOST_USER
+    6. SECRET_KEY --> for django
+    7. STRIPE_PUBLIC_KEY
+    8. STRIPE_WH_SECRET
+    9. STRIPE_SECRET_KEY
+    10. USE_AWS = True
 17. Once the config vars are added, navigate to the **Deploy** tab.
 <img src="https://github.com/kmadjei/MilestoneProject-Python-and-DataCentricDevelopment/blob/master/static/images/herokudeploy/deploytab.png?raw=true" alt="Deploy image">
 
